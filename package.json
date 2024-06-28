@@ -1,0 +1,23 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "practicing refactoring with JS",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highway92/refactoring.git"
+  },
+  "author": "highway92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/highway92/refactoring/issues"
+  },
+  "homepage": "https://github.com/highway92/refactoring#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "prettier": "3.3.2"
+  }
+}
