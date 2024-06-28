@@ -9,8 +9,6 @@ export function statement(invoice, plays) {
   }).format;
 
   for (let perf of invoice.performances) {
-    let thisAmount = amountFor(perf, playFor(perf));
-
     function playFor(aPerformance) {
       return plays[aPerformance.playID];
     }
@@ -45,8 +43,8 @@ export function statement(invoice, plays) {
       volumeCredits += Math.floor(perf.audience / 5);
 
     // 청구 내역을 출력한다.
-    result += ` ${playFor(perf).name}: ${format(thisAmount / 100)} (${perf.audience}석)\n`;
-    totalAmount += thisAmount;
+    result += ` ${playFor(perf).name}: ${format(amountFor(perf) / 100)} (${perf.audience}석)\n`;
+    totalAmount += amountFor(perf);
   }
 
   result += `총액 ${format(totalAmount / 100)}\n`;
