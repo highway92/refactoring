@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/highway92/refactoring#readme",
   "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-syntax-import-attributes": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
     "jest": "^29.7.0",
     "prettier": "3.3.2"
   }
