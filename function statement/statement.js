@@ -1,4 +1,4 @@
-import { createStatementData } from "./createStatementData";
+import createStatementData from "./createStatementData";
 function usd(aNumber) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
