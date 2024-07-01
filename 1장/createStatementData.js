@@ -26,7 +26,6 @@ export default function createStatementData(invoice, plays) {
     result.play = calculator.play;
     result.amount = calculator.amount;
     result.volumeCredits = calculator.volumeCredits;
-    console.log(result);
     return result;
   }
   return statementData;
