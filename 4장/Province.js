@@ -64,7 +64,7 @@ export class Province {
   }
 
   get profit() {
-    return (this.demandValue = this.demandCost);
+    return this.demandValue - this.demandCost;
   }
 
   get demandValue() {
@@ -72,7 +72,7 @@ export class Province {
   }
 
   get satisfiedDemand() {
-    return Math.min(this_demand, this.totalProduction);
+    return Math.min(this._demand, this.totalProduction);
   }
 
   get demandCost() {
